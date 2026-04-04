@@ -22,13 +22,13 @@ const projects = [
     {
         title: 'Core Bank',
         description: 'A robust banking application built with Java. Handles core financial transactions, account management, and secure data processing.',
-        image: 'images/banking.jpg',
+        image: 'banking.jpg',
         link: 'https://github.com/dev1511-patel/CoreBank'
     },
     {
         title: 'Employee Management System',
         description: 'A full-stack solution for managing corporate personnel data, featuring CRUD operations, role-based access, and efficient record tracking.',
-        image: 'images/hr-management.jpg',
+        image: 'hr-management.jpg',
         link: 'https://github.com/dev1511-patel/Employee-Mangemnet/tree/main'
     }
 ];
