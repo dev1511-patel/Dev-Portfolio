@@ -16,7 +16,7 @@ const projects = [
     {
         title: 'DevSportsStore',
         description: 'A comprehensive sports equipment e-commerce platform. Features a dynamic product catalog, shopping cart functionality, and a responsive UI.',
-        image: 'images/sports-store.jpg',
+        image: 'sports-store.jpg',
         link: 'https://voluble-fenglisu-94f4cf.netlify.app/'
     },
     {
