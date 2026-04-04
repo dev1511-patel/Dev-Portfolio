@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div id="scroll-progress"></div>
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">Dev Shrungar Bhai Patel</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-image">
+                <img src="images/PSwithBrownBG.png" alt="Background">
+            </div>
+            <div class="container hero-content">
+                <h1>Hi, I'm <span class="highlight">Dev Patel</span></h1>
+                <p class="typewriter" id="typewriter-text"></p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn outline-btn">View My Work</a>
+                    <a href="#contact" class="btn outline-btn">Contact Me</a>
+                    <a href="Dev_Resume_2025.pdf (4).pdf" class="btn outline-btn" download>Download My Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section container reveal">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a dedicated Java Developer based in Ahmedabad, Gujarat, specializing in backend system design and scalable web applications. With a strong foundation in Core Java and Spring Boot, I enjoy building efficient RESTful APIs and integrating advanced services like machine learning into microservices architectures. I pursued my B.E. in IT at ECT College of Engineering (GTU) and am passionate about cloud technologies and modern DevOps practices.</p>
+        </section>
+
+        <section id="skills" class="skills-section container reveal">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Dynamically Rendered Skills -->
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section container reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Dynamically Rendered Projects -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section container reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:dspatel5915@gmail.com" style="color: inherit; text-decoration: none;">dspatel5915@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>Ahmedabad, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🔗</div>
+                        <div class="info-text">
+                            <h3>Social Profiles</h3>
+                            <div class="contact-socials">
+                                <a href="https://linkedin.com/in/dev-shrungarbhai-patel-642300234/" target="_blank" aria-label="LinkedIn">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
+                                </a>
+                                <a href="https://github.com/dev1511-patel" target="_blank" aria-label="GitHub">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 24px; height: 24px; filter: var(--logo-filter);">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/mqakvjba" method="POST" id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="_replyto" required placeholder="yourName@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project..." rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Dev Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
